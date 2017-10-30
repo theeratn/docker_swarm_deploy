@@ -9,7 +9,7 @@ include docker_swarm
     cluster_type => 'manager',
     port         => '8500',
     address      => '172.17.8.101',
-    advertise    => 'eht0',
+    advertise    => $::ipaddress_enp0s8,
     path         => 'swarm',
     }
 
